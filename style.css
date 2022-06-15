@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* Primary */
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+  
+    /* Neutral */
+    --white: hsla(0, 0%, 100%, 0.75);
+    --lightgray:  hsl(0, 0%, 95%);
+}
+  
+*,
+*::before,
+*::after {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+  
+body {
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    display: flex;
+    place-content: center;
+    background-color: var(--lightgray);
+    height: 100vh;
+}
+  
+h1 { 
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--lightgray);
+}
+  
+p {
+    font-size: 15px;
+    margin: 25px 0 60px 0;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.8;
+}
+  
+.card-container {
+    display: flex;
+    width: 840px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 32px;
+    align-items: flex-start;
+}
+  
+.card1 {
+    background-color: var(--orange);
+    border-radius:  10px 0 0 10px;
+}
+  
+.card2 {
+    background-color: var(--cyan);
+}
+  
+.card3 {
+    background-color: var(--dark-cyan);
+    border-radius:  0 10px 10px 0;
+}
+  
+button {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 16;
+    border: solid 2px var(--lightgray);
+    background: var(--lightgray);
+    transition: all ease 0.3s;
+}
+  
+.card1 button {
+    color:hsl(31, 77%, 52%);
+}
+  
+.card2 button {
+    color:hsl(184, 100%, 22%);
+}
+  
+.card3 button {
+    color:hsl(179, 100%, 13%);
+}
+  
+button:hover {
+    background: transparent;
+    color: var(--lightgray);
+}
+  
+.circle {
+    margin-bottom: 30px;
+}
+
+.grid-link {
+    margin: 20px;
+}
+
+button.btn-grid {
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 18;
+    background: rgb(61, 61, 142);
+    color:hsla(0, 0%, 100%, 0.75);
+    transition: all ease 0.3s;
+}
+
+button.btn-grid:hover {
+    background: rgb(171, 200, 246);
+    color:rgb(61, 61, 142);
+}
+
+
+.grid-body {
+    background: black;
+}
+
+
+.wrapper {
+    background:rgb(29, 28, 28);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    width: 50%;
+    padding: 30px 100px 40px 50px;
+    margin: 60px;
+}
+
+/* .wrapper>div {
+    text-align: center;
+    padding: 50px 0;
+} */
+
+.orange {
+    background: rgb(252, 70, 3);
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+}
+
+.yellow {
+    background: rgb(255, 167, 5);
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.green {
+    background:rgb(3, 148, 3);
+    grid-column: 1/2;
+    grid-row: 2 / 4;
+}
+
+.blue1 {
+    background: rgb(67, 183, 255);
+    grid-column: 2/4;
+    grid-row: 2;
+    grid-template-rows: minmax(80px, auto);
+}
+
+.blue2 {
+    background: rgb(67, 183, 255);
+    grid-column: 2/4;
+    grid-row: 3;
+    grid-template-rows: minmax(110px, auto);
+}
+
+
+@media only screen and (max-width: 600px) {
+    p {
+      margin-bottom: 20px;
+    }
+  
+    body {
+      height: auto;
+    }
+  
+    .card-container {
+      flex-direction: column;
+      margin: 16% 0;
+      padding: 8%;
+    }
+  
+    .cards {
+      padding: 38px 44px;
+    }
+  
+    .card1 {
+      border-radius:  10px 10px 0 0;
+    }
+    
+    .card3 {
+      border-radius:  0 0 10px 10px;
+    }
+    
+}
