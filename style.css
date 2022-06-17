@@ -124,11 +124,9 @@ button.btn-grid:hover {
     color:rgb(61, 61, 142);
 }
 
-
 .grid-body {
     background: black;
 }
-
 
 .wrapper {
     background:rgb(29, 28, 28);
@@ -140,11 +138,6 @@ button.btn-grid:hover {
     padding: 30px 100px 40px 50px;
     margin: 60px;
 }
-
-/* .wrapper>div {
-    text-align: center;
-    padding: 50px 0;
-} */
 
 .orange {
     background: rgb(252, 70, 3);
@@ -168,14 +161,14 @@ button.btn-grid:hover {
     background: rgb(67, 183, 255);
     grid-column: 2/4;
     grid-row: 2;
-    grid-template-rows: minmax(80px, auto);
+    grid-template-rows: 20%;
 }
 
 .blue2 {
     background: rgb(67, 183, 255);
     grid-column: 2/4;
     grid-row: 3;
-    grid-template-rows: minmax(110px, auto);
+    grid-template-rows: 80%;
 }
 
 
